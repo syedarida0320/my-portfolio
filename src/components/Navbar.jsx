@@ -8,6 +8,7 @@ const links = [
   { href: "#skills", label: "Skills" },
   { href: "#achievements", label: "Achievements" },
   { href: "#contact", label: "Contact" },
+  { href: "/Rida-Irfan-MERN%20Developer-Resume-1.pdf", label: "CV", download: true },
 ];
 
 export default function Navbar() {
@@ -69,12 +70,13 @@ export default function Navbar() {
           <ul className="flex max-[860px]:hidden gap-8">
             {links.map((link) => (
               <li key={link.href}>
-                <a
-                  href={link.href}
-                  className={`font-mono text-[.8rem] tracking-[.04em] uppercase text-soft relative pb-1 transition-colors duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] nav-underline ${activeId === link.href.slice(1) ? "text-ivory active" : ""}`}
-                >
-                  {link.label}
-                </a>
+                  <a
+                    href={link.href}
+                    download={link.download || undefined}
+                    className={`font-mono text-[.8rem] tracking-[.04em] uppercase text-soft relative pb-1 transition-colors duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] nav-underline ${activeId === link.href.slice(1) ? "text-ivory active" : ""}`}
+                  >
+                    {link.label}
+                  </a>
               </li>
             ))}
           </ul>
@@ -156,16 +158,17 @@ export default function Navbar() {
             <nav className="flex flex-col gap-1">
               {links.map((link) => (
                 <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={closeMenu}
-                  className="group relative font-sans text-[1.5rem] font-medium tracking-[-.01em] text-ivory/60 hover:text-ivory py-3 transition-colors duration-300"
-                >
-                  <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-[1px] bg-gold transition-all duration-300 group-hover:w-6" />
-                  <span className="ml-0 group-hover:ml-8 transition-all duration-300">
-                    {link.label}
-                  </span>
-                </a>
+                    key={link.href}
+                    href={link.href}
+                    download={link.download || undefined}
+                    onClick={closeMenu}
+                    className="group relative font-sans text-[1.5rem] font-medium tracking-[-.01em] text-ivory/60 hover:text-ivory py-3 transition-colors duration-300"
+                  >
+                    <span className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-[1px] bg-gold transition-all duration-300 group-hover:w-6" />
+                    <span className="ml-0 group-hover:ml-8 transition-all duration-300">
+                      {link.label}
+                    </span>
+                  </a>
               ))}
             </nav>
           </div>
