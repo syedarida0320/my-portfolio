@@ -97,12 +97,22 @@ export default function Hero() {
             <a href="#contact" className="inline-flex items-center gap-2 px-[1.6rem] py-[.85rem] rounded-full font-semibold text-[.95rem] border border-gold/32 text-ivory transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:border-gold hover:text-gold-bright hover:-translate-y-[2px] max-[860px]:w-full max-[860px]:justify-center">
               Get in Touch
             </a>
-            <a href="/Rida-Irfan-MERN%20Developer-Resume-1.pdf" download className="inline-flex items-center gap-2 px-[1.6rem] py-[.85rem] rounded-full font-semibold text-[.95rem] border border-gold/32 text-ivory transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:border-gold hover:text-gold-bright hover:-translate-y-[2px] max-[860px]:w-full max-[860px]:justify-center">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <button
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/Rida-Irfan-MERN%20Developer-Resume-1.pdf";
+                link.download = "Rida-Irfan-Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="inline-flex items-center gap-2 px-[1.6rem] py-[.85rem] rounded-full font-semibold text-[.95rem] border border-gold/32 text-ivory transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:border-gold hover:text-gold-bright hover:-translate-y-[2px] max-[860px]:w-full max-[860px]:justify-center"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="pointer-events-none">
                 <path d="M8 1v10M4 7l4 4 4-4M2 13v2h12v-2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Download CV
-            </a>
+            </button>
           </motion.div>
           <motion.div
             className="mt-14 flex items-center gap-[.7rem] font-mono text-[.85rem] text-soft max-[860px]:mt-6 max-[860px]:justify-center"
