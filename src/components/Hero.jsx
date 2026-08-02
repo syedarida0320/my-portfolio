@@ -100,7 +100,7 @@ export default function Hero() {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/Rida-Irfan-MERN%20Developer-Resume-1.pdf";
+                link.href = "/Rida_Irfan_CV_Resume.pdf";
                 link.download = "Rida-Irfan-Resume.pdf";
                 document.body.appendChild(link);
                 link.click();

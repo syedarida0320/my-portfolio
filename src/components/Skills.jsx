@@ -6,13 +6,13 @@ const skills = [
   {
     title: 'Frontend',
     icon: 'M3 4h18v14H3zM3 9h18M9 4v14',
-    tags: ['React.js', 'TailwindCSS', 'Shadcn', 'Bootstrap', 'Javascript', 'HTML', 'CSS', 'React Router', 'Axios', 'Responsive UI Design'],
+    tags: ['React.js', 'Next.js', 'TailwindCSS', 'Shadcn', 'Bootstrap', 'Javascript', 'HTML', 'CSS', 'React Router', 'Axios', 'Responsive UI Design'],
     pct: 90,
   },
   {
     title: 'Backend',
     icon: 'M4 17V7l8-4 8 4v10l-8 4-8-4zM4 7l8 4 8-4M12 11v10',
-    tags: ['Node.js','Express.js', 'RESTful APIs', 'MVC Frameworks', 'JWT Authentication', 'Bcrypt'],
+    tags: ['Node.js','Express.js', 'Python', 'Django', 'RESTful APIs', 'MVC Frameworks', 'JWT Authentication', 'Bcrypt'],
     pct: 85,
   },
   {

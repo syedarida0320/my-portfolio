@@ -3,6 +3,13 @@ import Reveal from './Reveal'
 
 const projects = [
   {
+    title: 'Mentor AI',
+    dates: 'Final Year Project',
+    desc: 'A proof-based AI mentorship ecosystem for habit formation and personal growth with AI mentor personas, contextual memory chat, evidence verification challenges, streak tracking, and subscription content.',
+    tags: ['React 19', 'TanStack Router', 'Tailwind CSS v4', 'shadcn/ui', 'Express.js', 'Prisma', 'PostgreSQL', 'Langchain.js', 'OpenAI', 'Gemini', 'Ollama', 'Stripe', 'Redis', 'BullMQ'],
+    live: 'https://mentor-landing.erstech-localserver.xyz/',
+  },
+  {
     title: 'Real Estate App',
     dates: 'Nov 2025 – Jan 2026',
     desc: 'A full-stack MERN Real-Estate platform for browsing, listing, and managing properties with secure authentication, dynamic search, and responsive UI.',
@@ -88,17 +95,34 @@ export default function Projects() {
                       <span className="font-mono text-[.72rem] tracking-[.04em] px-[.65rem] py-[.3rem] border border-gold/32 rounded-full text-gold-bright whitespace-nowrap" key={t}>{t}</span>
                     ))}
                   </div>
-                  <a
-                    href={p.github}
-                    target="_blank"
-                    rel="noopener"
-                    className="mt-[1.8rem] inline-flex items-center gap-[.4rem] font-mono text-[.8rem] text-gold-bright"
-                  >
-                    View on GitHub{' '}
-                    <svg className="w-[14px] h-[14px] stroke-current fill-none stroke-[1.8] stroke-linecap-round stroke-linejoin-round shrink-0" viewBox="0 0 24 24">
-                      <path d="M7 17L17 7M7 7h10v10" />
-                    </svg>
-                  </a>
+                  <div className="mt-[1.8rem] flex items-center gap-5 flex-wrap">
+                    {p.live && (
+                      <a
+                        href={p.live}
+                        target="_blank"
+                        rel="noopener"
+                        className="inline-flex items-center gap-[.4rem] font-mono text-[.8rem] text-gold-bright"
+                      >
+                        Visit Live Site{' '}
+                        <svg className="w-[14px] h-[14px] stroke-current fill-none stroke-[1.8] stroke-linecap-round stroke-linejoin-round shrink-0" viewBox="0 0 24 24">
+                          <path d="M7 17L17 7M7 7h10v10" />
+                        </svg>
+                      </a>
+                    )}
+                    {p.github && (
+                      <a
+                        href={p.github}
+                        target="_blank"
+                        rel="noopener"
+                        className="inline-flex items-center gap-[.4rem] font-mono text-[.8rem] text-gold-bright"
+                      >
+                        View on GitHub{' '}
+                        <svg className="w-[14px] h-[14px] stroke-current fill-none stroke-[1.8] stroke-linecap-round stroke-linejoin-round shrink-0" viewBox="0 0 24 24">
+                          <path d="M7 17L17 7M7 7h10v10" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                 </div>
               )
             })}
