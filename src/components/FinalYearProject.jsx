@@ -107,7 +107,7 @@ const stack = [
   'BullMQ',
 ]
 
-const LIVE_URL = 'https://mentor-landing.erstech-localserver.xyz/'
+const DEMO_URL = 'https://lnkd.in/p/dCnWvapx'
 
 export default function FinalYearProject() {
   return (
@@ -146,12 +146,12 @@ export default function FinalYearProject() {
                 </div>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <a
-                    href={LIVE_URL}
+                    href={DEMO_URL}
                     target="_blank"
                     rel="noopener"
                     className="inline-flex items-center gap-2 px-[1.4rem] py-[.75rem] rounded-full font-semibold text-[.9rem] bg-gold text-page transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:bg-gold-bright hover:-translate-y-[2px] hover:shadow-[0_14px_30px_-10px_rgba(212,175,55,.45)]"
                   >
-                    Visit Live Site
+                    Watch Demo Video
                     <svg className="w-[15px] h-[15px] stroke-current fill-none stroke-[1.8] stroke-linecap-round stroke-linejoin-round shrink-0" viewBox="0 0 24 24">
                       <path d="M7 17L17 7M7 7h10v10" />
                     </svg>
@@ -211,7 +211,7 @@ export default function FinalYearProject() {
           ))}
         </div>
 
-        <div className="grid grid-cols-[1fr_360px] gap-6 mt-16 items-stretch max-[980px]:grid-cols-1">
+        <div className="grid grid-cols-1 gap-6 mt-16 items-stretch">
           <Reveal delay={0.1}>
             <div className="h-full bg-surface border border-gold/16 rounded-[14px] p-8">
               <h3 className="font-mono text-[.78rem] tracking-[.18em] uppercase text-gold mb-6">
@@ -225,30 +225,6 @@ export default function FinalYearProject() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.18}>
-            <div className="relative h-full overflow-hidden rounded-[14px] border border-gold/24 bg-surface p-8">
-              <div className="pointer-events-none absolute -top-20 -right-16 w-56 h-56 rounded-full bg-gold/12 blur-3xl" />
-              <div className="relative h-full flex flex-col justify-center">
-                <h3 className="font-mono text-[.78rem] tracking-[.18em] uppercase text-gold-bright mb-4">
-                  Live Website
-                </h3>
-                <p className="text-soft text-[.92rem] mb-6">
-                  Explore the deployed Mentor AI platform with AI mentor personas, evidence challenges, and streak tracking.
-                </p>
-                <a
-                  href={LIVE_URL}
-                  target="_blank"
-                  rel="noopener"
-                  className="inline-flex items-center gap-2 px-[1.3rem] py-[.7rem] rounded-full font-semibold text-[.88rem] bg-gold text-page transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:bg-gold-bright hover:-translate-y-[2px] hover:shadow-[0_14px_30px_-10px_rgba(212,175,55,.45)] self-start"
-                >
-                  Visit Live Site
-                  <svg className="w-[15px] h-[15px] stroke-current fill-none stroke-[1.8] stroke-linecap-round stroke-linejoin-round shrink-0" viewBox="0 0 24 24">
-                    <path d="M7 17L17 7M7 7h10v10" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </Reveal>
         </div>
       </div>
     </section>

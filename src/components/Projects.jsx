@@ -7,13 +7,16 @@ const projects = [
     dates: 'Final Year Project',
     desc: 'A proof-based AI mentorship ecosystem for habit formation and personal growth with AI mentor personas, contextual memory chat, evidence verification challenges, streak tracking, and subscription content.',
     tags: ['React 19', 'TanStack Router', 'Tailwind CSS v4', 'shadcn/ui', 'Express.js', 'Prisma', 'PostgreSQL', 'Langchain.js', 'OpenAI', 'Gemini', 'Ollama', 'Stripe', 'Redis', 'BullMQ'],
-    live: 'https://mentor-landing.erstech-localserver.xyz/',
+    live: 'https://lnkd.in/p/dCnWvapx',
+    liveLabel: 'Watch Demo Video',
   },
   {
     title: 'Real Estate App',
     dates: 'Nov 2025 – Jan 2026',
     desc: 'A full-stack MERN Real-Estate platform for browsing, listing, and managing properties with secure authentication, dynamic search, and responsive UI.',
     tags: ['Reactjs', 'Node.js', 'Express', 'MongoDB', 'JavaScript', 'JWT', 'bcrypt', 'Socket.io', 'Git', 'Github', 'Postman'],
+    live: 'https://lnkd.in/p/dhEFJ7cW',
+    liveLabel: 'Watch Demo Video',
     github: 'https://github.com/syedarida0320/real-estate-app',
   },
   {
@@ -21,6 +24,8 @@ const projects = [
     dates: 'Oct 2025 – Nov 2025',
     desc: 'A responsive weather forecasting application that delivers real-time weather updates using API integration with a clean and user-friendly interface.',
     tags: ['Reactjs', 'Firebase', 'REST API', 'Open Meteo Weather API', 'Git', 'Github'],
+    live: 'https://lnkd.in/p/dcGBSe3Q',
+    liveLabel: 'Watch Demo Video',
     github: 'https://github.com/syedarida0320/weather-app-project',
   },
   {
@@ -35,6 +40,8 @@ const projects = [
     dates: 'Jul 2025 – Aug 2025',
     desc: 'A modern e-commerce web application featuring product browsing, cart management, and seamless shopping experience with a responsive design.',
     tags: ['Reactjs', 'JavaScript', 'Responsive UI', 'HTML', 'Tailwind CSS', 'React Router'],
+    live: 'https://lnkd.in/p/dikc3SCv',
+    liveLabel: 'Watch Demo Video',
     github: 'https://github.com/syedarida0320/Ecommerce-website',
   },
 ]
@@ -103,7 +110,7 @@ export default function Projects() {
                         rel="noopener"
                         className="inline-flex items-center gap-[.4rem] font-mono text-[.8rem] text-gold-bright"
                       >
-                        Visit Live Site{' '}
+                        {p.liveLabel || 'Visit Live Site'}{' '}
                         <svg className="w-[14px] h-[14px] stroke-current fill-none stroke-[1.8] stroke-linecap-round stroke-linejoin-round shrink-0" viewBox="0 0 24 24">
                           <path d="M7 17L17 7M7 7h10v10" />
                         </svg>

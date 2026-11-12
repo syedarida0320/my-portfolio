@@ -1,6 +1,7 @@
-import { useState, useEffect, Suspense } from 'react'
+import { useState, useEffect, Suspense, lazy } from 'react'
 import { motion } from 'framer-motion'
-import HeroScene from './HeroScene'
+
+const HeroScene = lazy(() => import('./HeroScene'))
 
 const statuses = ['Lahore, Pakistan', 'Open to new roles', 'Building with the MERN stack']
 
@@ -129,7 +130,7 @@ export default function Hero() {
           <img
             src="/profile-pic.jpeg"
             alt="Rida Irfan"
-            loading="lazy"
+            fetchPriority="high"
             width="280"
             height="280"
             className="w-[320px] h-[320px] rounded-full object-cover border-[3px] border-page shadow-[0_0_0_1px_rgba(212,175,55,.15),0_25px_60px_-20px_rgba(0,0,0,.7)] relative z-10 max-[860px]:w-[160px] max-[860px]:h-[160px] max-[640px]:w-[180px] max-[640px]:h-[180px]"
