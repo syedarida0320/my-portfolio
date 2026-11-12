@@ -2,22 +2,22 @@ import Reveal from "./Reveal";
 
 export default function About() {
   return (
-    <section className="section-divider relative py-28" id="about">
-      <div className="max-w-[1180px] mx-auto px-6">
+    <section className="section-divider relative py-20" id="about">
+      <div className="max-w-[1100px] mx-auto px-6">
         <Reveal>
-          <div className="max-w-[640px] mb-14">
+          <div className="max-w-[640px] mb-10">
             <p className="font-mono text-[.78rem] tracking-[.18em] uppercase text-gold inline-flex items-center gap-[.6rem] mb-4">
               <span className="inline-block w-[18px] h-px bg-gold" />
               About
             </p>
-            <h2 className="text-[clamp(2rem,4vw,2.7rem)] leading-[1.15] text-ivory font-semibold">
+            <h2 className="text-[clamp(1.6rem,3vw,2.1rem)] leading-[1.15] text-ivory font-semibold">
               A bit about how I work
             </h2>
           </div>
         </Reveal>
         <Reveal delay={0.15}>
           <div className="grid grid-cols-[1.2fr_0.8fr] gap-16 items-start max-[980px]:grid-cols-1 max-[980px]:gap-10">
-            <div className="text-soft text-[1.05rem]">
+            <div className="text-soft text-[.95rem]">
               <p>
                 I&apos;m a MERN stack developer with a Bachelor&rsquo;s degree
                 in Computer Science. I build full-stack web applications and

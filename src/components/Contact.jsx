@@ -2,15 +2,15 @@ import Reveal from './Reveal'
 
 export default function Contact() {
   return (
-    <section className="section-divider relative py-28" id="contact">
-      <div className="max-w-[1180px] mx-auto px-6">
+    <section className="section-divider relative py-20" id="contact">
+      <div className="max-w-[1100px] mx-auto px-6">
         <Reveal>
-          <div className="max-w-[640px] mb-14">
+          <div className="max-w-[640px] mb-10">
             <p className="font-mono text-[.78rem] tracking-[.18em] uppercase text-gold inline-flex items-center gap-[.6rem] mb-4">
               <span className="inline-block w-[18px] h-px bg-gold" />
               Contact
             </p>
-            <h2 className="text-[clamp(2rem,4vw,2.7rem)] leading-[1.15] text-ivory font-semibold">Let&apos;s build something</h2>
+            <h2 className="text-[clamp(1.6rem,3vw,2.1rem)] leading-[1.15] text-ivory font-semibold">Let&apos;s build something</h2>
             <p className="mt-4 text-soft text-[1.05rem] max-w-[600px]">
              Ready to contribute, learn, and grow through internship and full-time roles.
             </p>

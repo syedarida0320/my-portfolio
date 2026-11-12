@@ -63,7 +63,7 @@ export default function Hero() {
       </Suspense>
 
       <motion.div
-        className="max-w-[1180px] mx-auto px-6 relative z-10 flex items-center gap-16 max-[860px]:flex-col-reverse max-[860px]:text-center max-[860px]:gap-6"
+        className="max-w-[1100px] mx-auto px-6 relative z-10 flex items-center gap-12 max-[860px]:flex-col-reverse max-[860px]:text-center max-[860px]:gap-6"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -77,25 +77,25 @@ export default function Hero() {
             MERN Stack Developer
           </motion.p>
           <motion.h1
-            className="text-[clamp(3rem,7.5vw,5.2rem)] leading-[1.04] mt-2 text-ivory font-semibold max-[860px]:text-[clamp(2.2rem,8vw,2.8rem)]"
+            className="text-[clamp(2.3rem,5.2vw,3.7rem)] leading-[1.04] mt-2 text-ivory font-semibold max-[860px]:text-[clamp(2.2rem,8vw,2.8rem)]"
             variants={itemVariants}
           >
             <span className="block text-[.55em] font-light text-soft tracking-[-.02em] mb-[.1rem] max-[860px]:text-[.5em]">Hi, I&apos;m</span> <em className="bg-gradient-to-br from-gold-bright to-gold bg-clip-text text-transparent">Rida Irfan.</em>
           </motion.h1>
           <motion.p
-            className="mt-6 text-[1.15rem] text-soft max-w-[560px] max-[860px]:text-[1rem] max-[860px]:mt-4"
+            className="mt-6 text-[1rem] text-soft max-w-[560px] max-[860px]:text-[1rem] max-[860px]:mt-4"
             variants={itemVariants}
           >
             I build full-stack web applications&mdash;from designing efficient database architectures to crafting interfaces users love. With 6 months of hands-on industry experience, I contribute production-ready code, solve real-world challenges, and continuously refine my skills as a developer.
           </motion.p>
           <motion.div
-            className="mt-10 flex gap-4 flex-wrap max-[860px]:mt-[1.8rem] max-[860px]:justify-center"
+            className="mt-8 flex gap-3 flex-wrap max-[860px]:mt-[1.8rem] max-[860px]:justify-center"
             variants={itemVariants}
           >
-            <a href="#projects" className="inline-flex items-center gap-2 px-[1.6rem] py-[.85rem] rounded-full font-semibold text-[.95rem] bg-gold text-page transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:bg-gold-bright hover:-translate-y-[2px] hover:shadow-[0_14px_30px_-10px_rgba(212,175,55,.45)] max-[860px]:w-full max-[860px]:justify-center">
+            <a href="#projects" className="inline-flex items-center gap-2 px-[1.3rem] py-[.65rem] rounded-full font-semibold text-[.88rem] bg-gold text-page transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:bg-gold-bright hover:-translate-y-[2px] hover:shadow-[0_14px_30px_-10px_rgba(212,175,55,.45)] max-[860px]:w-full max-[860px]:justify-center">
               View Projects
             </a>
-            <a href="#contact" className="inline-flex items-center gap-2 px-[1.6rem] py-[.85rem] rounded-full font-semibold text-[.95rem] border border-gold/32 text-ivory transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:border-gold hover:text-gold-bright hover:-translate-y-[2px] max-[860px]:w-full max-[860px]:justify-center">
+            <a href="#contact" className="inline-flex items-center gap-2 px-[1.3rem] py-[.65rem] rounded-full font-semibold text-[.88rem] border border-gold/32 text-ivory transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:border-gold hover:text-gold-bright hover:-translate-y-[2px] max-[860px]:w-full max-[860px]:justify-center">
               Get in Touch
             </a>
             <button
@@ -107,7 +107,7 @@ export default function Hero() {
                 link.click();
                 document.body.removeChild(link);
               }}
-              className="inline-flex items-center gap-2 px-[1.6rem] py-[.85rem] rounded-full font-semibold text-[.95rem] border border-gold/32 text-ivory transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:border-gold hover:text-gold-bright hover:-translate-y-[2px] max-[860px]:w-full max-[860px]:justify-center"
+              className="inline-flex items-center gap-2 px-[1.3rem] py-[.65rem] rounded-full font-semibold text-[.88rem] border border-gold/32 text-ivory transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:border-gold hover:text-gold-bright hover:-translate-y-[2px] max-[860px]:w-full max-[860px]:justify-center"
             >
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="pointer-events-none">
                 <path d="M8 1v10M4 7l4 4 4-4M2 13v2h12v-2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -133,7 +133,7 @@ export default function Hero() {
             fetchPriority="high"
             width="280"
             height="280"
-            className="w-[320px] h-[320px] rounded-full object-cover border-[3px] border-page shadow-[0_0_0_1px_rgba(212,175,55,.15),0_25px_60px_-20px_rgba(0,0,0,.7)] relative z-10 max-[860px]:w-[160px] max-[860px]:h-[160px] max-[640px]:w-[180px] max-[640px]:h-[180px]"
+            className="w-[250px] h-[250px] rounded-full object-cover border-[3px] border-page shadow-[0_0_0_1px_rgba(212,175,55,.15),0_25px_60px_-20px_rgba(0,0,0,.7)] relative z-10 max-[860px]:w-[160px] max-[860px]:h-[160px] max-[640px]:w-[180px] max-[640px]:h-[180px]"
           />
         </motion.div>
       </motion.div>

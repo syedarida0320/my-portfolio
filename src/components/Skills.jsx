@@ -73,15 +73,15 @@ export default function Skills() {
   const next = () => setSlide((s) => Math.min(totalSlides - 1, s + 1))
 
   return (
-    <section className="section-divider relative py-28" id="skills">
-      <div className="max-w-[1180px] mx-auto px-6">
+    <section className="section-divider relative py-20" id="skills">
+      <div className="max-w-[1100px] mx-auto px-6">
         <Reveal>
-          <div className="max-w-[640px] mb-14">
+          <div className="max-w-[640px] mb-10">
             <p className="font-mono text-[.78rem] tracking-[.18em] uppercase text-gold inline-flex items-center gap-[.6rem] mb-4">
               <span className="inline-block w-[18px] h-px bg-gold" />
               Skills
             </p>
-            <h2 className="text-[clamp(2rem,4vw,2.7rem)] leading-[1.15] text-ivory font-semibold">Tools of the trade</h2>
+            <h2 className="text-[clamp(1.6rem,3vw,2.1rem)] leading-[1.15] text-ivory font-semibold">Tools of the trade</h2>
           </div>
         </Reveal>
 

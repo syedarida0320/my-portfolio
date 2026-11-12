@@ -3,17 +3,17 @@ import Reveal from "./Reveal";
 export default function Experience() {
   return (
     <section
-      className="section-divider section-divider--alt relative py-28 bg-page-alt"
+      className="section-divider section-divider--alt relative py-20 bg-page-alt"
       id="experience"
     >
-      <div className="max-w-[1180px] mx-auto px-6">
+      <div className="max-w-[1100px] mx-auto px-6">
         <Reveal>
-          <div className="max-w-[640px] mb-14">
+          <div className="max-w-[640px] mb-10">
             <p className="font-mono text-[.78rem] tracking-[.18em] uppercase text-gold inline-flex items-center gap-[.6rem] mb-4">
               <span className="inline-block w-[18px] h-px bg-gold" />
               Experience
             </p>
-            <h2 className="text-[clamp(2rem,4vw,2.7rem)] leading-[1.15] text-ivory font-semibold">
+            <h2 className="text-[clamp(1.6rem,3vw,2.1rem)] leading-[1.15] text-ivory font-semibold">
               Where I&apos;ve worked
             </h2>
           </div>
@@ -22,10 +22,10 @@ export default function Experience() {
         <Reveal delay={0.15}>
           <div>
             <div className="flex items-baseline gap-[.9rem] flex-wrap mb-[.4rem]">
-              <h3 className="text-[1.5rem] text-ivory font-semibold">
+              <h3 className="text-[1.2rem] text-ivory font-semibold">
                 MERN Stack Intern
               </h3>
-              <span className="italic text-gold-bright text-[1.2rem]">
+              <span className="italic text-gold-bright text-[1rem]">
                 @ ERS Tech
               </span>
             </div>

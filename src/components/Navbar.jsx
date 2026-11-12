@@ -56,7 +56,7 @@ export default function Navbar() {
         className={`fixed top-0 left-0 right-0 z-50 py-5 transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] border-b border-transparent ${scrolled ? "bg-page/88 backdrop-blur-[14px] border-gold/16 py-[.9rem]" : ""}`}
         id="nav"
       >
-        <div className="max-w-[1180px] mx-auto px-6 flex items-center justify-between gap-6">
+        <div className="max-w-[1100px] mx-auto px-6 flex items-center justify-between gap-6">
           <a
             href="#hero"
             className="flex items-center gap-[.6rem] font-sans font-bold text-[1.1rem]"
